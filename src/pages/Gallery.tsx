@@ -73,7 +73,7 @@ const getGallery = (loading: boolean, galleries: GalleryInfo[]) => {
           <TabPanels>
             <TabPanel>
               <Text m={1} fontSize="xl">
-                ポスター、パンフレット
+                ポスター、Tシャツデザイン
               </Text>
               <ImageList imageList={galleries[0].images}></ImageList>
             </TabPanel>

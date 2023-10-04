@@ -32,27 +32,9 @@ export default function WithSubnavigation() {
 
   return (
     <Box>
-      {/* <Box
-        bg={useColorModeValue("#a260bf", "purple.600")}
-        color={useColorModeValue("white", "white")}
-      >
-        <Center>
-          <Text
-            my={3}
-            display={{ base: "none", md: "flex" }}
-            textAlign={useBreakpointValue({ base: "center", md: "center" })}
-            color={useColorModeValue("white", "white")}
-            onClick={() => {
-              history.push("/");
-            }}
-          >
-            キラリ高校★オンライン輝祭 2021
-          </Text>
-        </Center>
-      </Box> */}
       <Flex
-        bg={useColorModeValue("#a260bf", "purple.600")}
-        color={useColorModeValue("white", "white")}
+        bg={useColorModeValue("#fff700", "#fff700")}
+        color={useColorModeValue("#610081", "#610081")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 3 }}
@@ -85,12 +67,12 @@ export default function WithSubnavigation() {
               ml={3}
               textStyle="p"
               textAlign={useBreakpointValue({ base: "center", md: "left" })}
-              color={useColorModeValue("white", "white")}
+              color={useColorModeValue("#610081", "#610081")} // title color
               onClick={() => {
                 history.push("/");
               }}
             >
-              キラリ高校★オンライン輝祭 2021
+              キラリ高校★オンライン輝祭 2022
             </Text>
 
             <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -98,42 +80,6 @@ export default function WithSubnavigation() {
             </Flex>
           </Flex>
         </HStack>
-        {/* <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
-        >
-          <IconButton
-            onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
-            variant={"ghost"}
-            aria-label={"Toggle Navigation"}
-          />
-        </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-            bg="red"
-          >
-            キラリ高校★オンライン輝祭 2021
-          </Text>
-
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav />
-          </Flex>
-        </Flex> */}
-
-        {/* <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-        </Stack> */}
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
@@ -148,8 +94,8 @@ interface DesktopNavItems {
 }
 
 const DesktopNav = ({ isAuthrized }: DesktopNavItems) => {
-  const linkColor = useColorModeValue("white", "gray.200");
-  const linkHoverColor = useColorModeValue("yellow", "white");
+  const linkColor = useColorModeValue("#610081", "gray.200");
+  const linkHoverColor = useColorModeValue("red", "red");
   const popoverContentBgColor = useColorModeValue("purple.300", "gray.800");
 
   return (

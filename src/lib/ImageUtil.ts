@@ -2,7 +2,7 @@ import imageCompression from "browser-image-compression";
 
 export const getCompressImageFileAsync = async (file: File): Promise<File> => {
   const options = {
-    maxSizeMB: 0.7, // 最大ファイルサイズ
+    maxSizeMB: 0.5, // 最大ファイルサイズ
     maxWidthOrHeight: 1248, // 最大画像幅もしくは高さ
     maxIteration: 35,
   };
@@ -17,7 +17,7 @@ export const getCompressImageFileAsync = async (file: File): Promise<File> => {
 
 export const getCompressThumbNailImageFileAsync = async (file: File): Promise<File> => {
   const options = {
-    maxSizeMB: 0.2, // 最大ファイルサイズ
+    maxSizeMB: 0.05, // 最大ファイルサイズ
     maxWidthOrHeight: 450, // 最大画像幅もしくは高さ
     maxIteration: 35,
   };

@@ -43,7 +43,7 @@ const theme = extendTheme({
     },
     keyword: {
       fontSize: ["1.5rem", "3rem"],
-      color: "blue",
+      color: "#610081",
     },
   },
 });

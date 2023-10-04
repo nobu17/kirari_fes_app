@@ -22,33 +22,33 @@ export default function SpecialEvent() {
     {
       title: "キラリの謎",
       explaination:
-        "キラリ高校の謎にチャレンジ！君は何問解けるかな...？\n正答数によっては景品がもらえるかも!? (外部リンクに飛びます)",
+        "正答数上位者には後日景品贈呈！\n「実行委員」ページの動画がヒント！",
       linkUrl: getEnv("REACT_APP_FORM_URL")!,
-      color: "green.400",
+      color: "#fff300",
       iconType: ImQuestion,
     },
     {
       title: "キラリギャラリー",
       explaination:
-        "「紫」のテーマに募集した写真を公開中！\nぜひご覧ください。",
+        "生徒と教職員が撮影した「黄色」の写真を公開中！\n独創的な写真をお楽しみください！",
       linkUrl: "/kirari_gallery",
-      color: "blue.400",
+      color: "#fff300",
       iconType: ImFilePicture,
     },
     {
-      title: "オリジナルTシャツ",
+      title: "輝祭チャリTシャツ2022",
       explaination:
-        "生徒がデザインしたステキなTシャツをご紹介！\n当日はこのTシャツで参加しましょう！",
+        "「令和4年台風15号災害静岡県義援金」へ\n売上の一部を寄付します！",
       linkUrl: "/t_gallery",
-      color: "red.400",
+      color: "#fff300",
       iconType: FaTshirt,
     },
     {
-      title: "キラリカップ",
+      title: "輝祭当日の各会場の様子",
       explaination:
-        "やってまいりました、巷で噂のキラリカップ 2021！\n当日の模様を後日配信いたしますのでお楽しみに。",
+        "当日の様子を後日配信予定です\n白熱の2日間をお楽しみに！",
       linkUrl: "",
-      color: "yellow.400",
+      color: "#fff300",
       iconType: AiFillTrophy,
     },
   ];
